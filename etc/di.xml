@@ -1,0 +1,7 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Model\Config">
+        <plugin name="RobertRupa_AdditionalAttributeForSorting_Plugin" type="RobertRupa\AdditionalAttributeForSorting\Plugin\ConfigPlugin" sortOrder="10" disabled="false"  />
+    </type>
+
+    <preference for="Magento\Catalog\Block\Product\ProductList\Toolbar" type="RobertRupa\AdditionalAttributeForSorting\Block\Product\ProductList\ToolbarOverride" />
+</config>
